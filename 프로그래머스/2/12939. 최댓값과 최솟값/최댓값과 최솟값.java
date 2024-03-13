@@ -7,9 +7,9 @@ class Solution {
         for (int i = 0; i < numbers.length; i++) {
             list.add(Integer.valueOf(numbers[i]));
         }
-        Integer max = list.stream().mapToInt(x -> x).max().getAsInt();
-        Integer min = list.stream().mapToInt(x -> x).min().getAsInt();
-        answer = min+ " " + max;
+        int max = list.stream().mapToInt(x -> x).max().getAsInt();
+        int min = list.stream().mapToInt(x -> x).min().getAsInt();
+        answer = min + " " + max;
         return answer;
     }
 }
