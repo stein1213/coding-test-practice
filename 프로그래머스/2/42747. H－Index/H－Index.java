@@ -9,10 +9,11 @@ class Solution {
         Arrays.sort(citations);
         
         for (int i = n - 1; i >= 0; i--) {
-         
+            
             if (citations[i] < h) break; 
             
             h++;
+            
         }
         
         return h - 1;
