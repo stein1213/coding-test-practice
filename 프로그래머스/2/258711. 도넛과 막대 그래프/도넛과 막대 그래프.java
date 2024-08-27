@@ -60,14 +60,7 @@ class Solution {
         
         donut = strMap.get(point) - eight - stick;
         
-        int[] answer = new int[4];
-        
-        answer[0] = point;
-        answer[1] = donut;
-        answer[2] = stick;
-        answer[3] = eight;
-        
-        return answer;
+        return new int[] {point, donut, stick, eight};
            
         // 막대 갯수 : 쏘지 않는 정점 수
         // 8자 갯수 : 2개쏨 + 2개받음 정점 수
