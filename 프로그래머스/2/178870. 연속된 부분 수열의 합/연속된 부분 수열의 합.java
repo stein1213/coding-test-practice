@@ -3,9 +3,7 @@ class Solution {
         
         int sum = 0;
 
-        int end = 0;
-        
-        int str = 0;
+        int end = 0;       
         
         for (int i = 0; i < sequence.length; i++) {
             
@@ -14,7 +12,7 @@ class Solution {
             else break;
         }
         
-        for (str = end; str >= 0; str--) {
+        for (int str = end; str >= 0; str--) {
                     
             sum += sequence[str];
             
@@ -40,7 +38,7 @@ class Solution {
             }
         }
         
-        return new int[] {str, end};
+        return new int[2];
 
     }
 }
