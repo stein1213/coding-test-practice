@@ -6,7 +6,7 @@ class Solution {
     
     public int[][] solution(int n) {
                 
-        set(1, 3, 2, n);
+        hanoi(1, 2, 3, n);
         
         int[][] answer = new int[list.size()][2];
         
@@ -18,15 +18,15 @@ class Solution {
         return answer;
     }
     
-    void set(int start, int end, int via, int n) {
+    void hanoi(int start, int via, int end, int n) {
         
         if (n > 1) {
             
-            set(start, via, end, n - 1);
+            hanoi(start, end, via, n - 1);
             
             list.add(new int[] {start, end});
             
-            set(via, end, start, n - 1);
+            hanoi(via, start, end, n - 1);
             
         } else {
             
