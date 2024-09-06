@@ -8,10 +8,10 @@ class Solution {
         // x 중복 체크
         boolean[] raw = new boolean[n];
         
-        // x y 값 더하기
+        // 우상향 대각선 중복 체크: x + y 
         boolean[] cross1 = new boolean[n * 2];
         
-        // x y 값 뺀 것에 n 더하기
+        // 좌상향 대각선 중복 체크: x - y + n
         boolean[] cross2 = new boolean[n * 2];
         
         nQueen(n, 0, place, raw, cross1, cross2);
