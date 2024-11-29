@@ -1,7 +1,3 @@
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Arrays;
-
 class Solution {
     public int solution(int n, int[][] wires) {
 
