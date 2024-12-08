@@ -57,8 +57,6 @@ class Solution {
             
             for(char c : operators) {
                 
-                System.out.print(c);
-                
                 int index = 0;
                 
                 while(index < tmpOptList.size()) {
@@ -75,7 +73,6 @@ class Solution {
                 }
             }
             
-            System.out.println();
             answer = Math.max(Math.abs(tmpLongList.getFirst()), answer);
         }
           
